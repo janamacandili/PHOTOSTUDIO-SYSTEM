@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moonlight Photos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    .hero-gallery {
+      background: #fdf7fa;
+      padding: 30px 0;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 1300px;
+      height: 700px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .booking {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .booking h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .booking span {
+      color: #f291c7;
+    }
+
+    .booking p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .branches {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .branch img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .branch h3 {
+      margin-top: 10px;
+    }
+
+    .events {
+      background: #f8cfdc;
+      text-align: center;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .events p {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .events button {
+      background: #fff;
+      color: #f291c7;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Include header.html -->
+  <?php include 'header.html'; ?>
+
+  <!-- Main Content -->
+  <section class="hero-gallery">
+    <div class="gallery">
+      <img src="C:\WEB APP\IPT WEB\Static\Untitled design.jpg" alt="Featured Photo" />
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Book your <br><span>self-photo shoot</span></h2>
+    <p>Select a branch below</p>
+    <div class="branches">
+      <div class="branch">
+        <img src="C:\WEB APP\IPT WEB\Static\Tanauan.jpg" alt="Tanauan City">
+        <h3>TANAUAN CITY</h3>
+      </div>
+      <div class="branch">
+        <img src="C:\WEB APP\IPT WEB\Static\SM STO..jpg" alt="Batangas City">
+        <h3>BATANGAS CITY</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="events">
+    <div>
+      <p style="font-size:30px;">And hey, we also do events.</p>
+      <p>We’re bringing the Moonlight Experience to your events with Booths by Moonlight Studio.</p>
+    </div>
+    <button>LEARN MORE</button>
+  </section>
+
+  <!-- Include footer.html -->
+  <?php include 'footer.html'; ?>
+
+</body>
+</html>
